@@ -1,10 +1,9 @@
-using LeetCodePractice.Solutions.Easy;
-using Xunit;
+ï»¿using LeetCodePractice.Solutions.Easy;
 
 namespace LeetCodePractice.Test.Solutions.Easy
 {
     /// <summary>
-    /// ´ú¸Õ¸ê®Æ«¬§O
+    /// æ¸¬è©¦è³‡æ–™å‹åˆ¥
     /// </summary>
     public class InitData
     {
@@ -15,7 +14,7 @@ namespace LeetCodePractice.Test.Solutions.Easy
     public class Q001_Two_SumTests
     {
         /// <summary>
-        /// ·Ç³Æ´ú¸Õ¸ê®Æ
+        /// æº–å‚™æ¸¬è©¦è³‡æ–™
         /// </summary>
         public static IEnumerable<object[]> Data =>
             new List<object[]>
@@ -30,13 +29,13 @@ namespace LeetCodePractice.Test.Solutions.Easy
         [MemberData(nameof(Data))]
         public void Solve(InitData input, int[] expected)
         {
-            // Arrange¡G·Ç³Æ´ú¸Õª«¥ó»P¿é¤J¸ê®Æ
+            // Arrangeï¼šæº–å‚™æ¸¬è©¦ç‰©ä»¶èˆ‡è¼¸å…¥è³‡æ–™
             var solution = new Q001_Two_Sum();
 
-            // Act¡G°õ¦æ«İ´ú¤èªk
+            // Actï¼šåŸ·è¡Œå¾…æ¸¬æ–¹æ³•
             var result = solution.Solve((input.Nums, input.Target));
 
-            // Assert¡GÅçÃÒµ²ªG
+            // Assertï¼šé©—è­‰çµæœ
             Assert.Equal(expected, result);
         }
     }
